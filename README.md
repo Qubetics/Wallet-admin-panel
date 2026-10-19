@@ -34,7 +34,6 @@ cp .env.example .env
 | `REACT_APP_TATUM_URL` | Tatum Solana node URL, including its API key |
 | `REACT_APP_PROGRAM_ID` | Solana program address |
 | `REACT_APP_REFERRAL_ACC_ID` | Solana referral account address |
-| `REACT_APP_JUPITER_ID` | Jupiter program ID |
 
 All `REACT_APP_*` values are embedded in the browser bundle at build time, so anyone who opens the app can read them. Never commit real values; `.env*` files are git-ignored except `.env.example`.
 
