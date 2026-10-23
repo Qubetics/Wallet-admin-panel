@@ -1,0 +1,60 @@
+Qubetics Admin
+Copyright (c) 2026 Qubetics
+
+This product is licensed under the MIT License (see LICENSE). It includes and
+depends on third-party software, each distributed under its own licence. The
+licence terms of each package are in its own LICENSE file in node_modules after
+`npm install`. Versions below are those resolved in package-lock.json at the
+time of writing; check the lockfile for the current ones.
+
+Only direct dependencies are listed. Transitive dependencies carry their own
+licences and are not enumerated here.
+
+--------------------------------------------------------------------------------
+Patched third-party code
+--------------------------------------------------------------------------------
+
+patches/react-scripts+5.0.1.patch
+  Applied by patch-package on `npm install` (postinstall) to
+  node_modules/react-scripts/config/webpack.config.js.
+  Upstream: react-scripts 5.0.1 (Create React App), MIT License,
+  Copyright (c) 2013-present, Facebook, Inc.
+  Change: adds `resolve.fallback` entries mapping the Node core modules
+  crypto, vm, http, https, url, zlib, stream, buffer, console and constants to
+  their browserify packages (listed below), which webpack 5 no longer provides.
+  The rest of the patch is whitespace reformatting. The patch contains only
+  changes to react-scripts; it is distributed under react-scripts' MIT License.
+
+--------------------------------------------------------------------------------
+Apache License 2.0
+--------------------------------------------------------------------------------
+  @solana/spl-token, @solana/wallet-adapter-base, @solana/wallet-adapter-react,
+  @solana/wallet-adapter-react-ui, @solana/wallet-adapter-wallets,
+  web-vitals, typescript (dev)
+
+  Licensed under the Apache License, Version 2.0; you may not use these files
+  except in compliance with the License. A copy is at
+  http://www.apache.org/licenses/LICENSE-2.0
+
+--------------------------------------------------------------------------------
+MIT OR Apache-2.0 (used here under MIT)
+--------------------------------------------------------------------------------
+  @project-serum/anchor
+
+--------------------------------------------------------------------------------
+MIT License
+--------------------------------------------------------------------------------
+  @ant-design/icons, @hookform/resolvers, @reduxjs/toolkit,
+  @solana/web3.js, @tanstack/react-query, antd, axios, bignumber.js,
+  browserify-zlib, buffer, console-browserify, constants-browserify,
+  crypto-browserify, crypto-js, dayjs, env-cmd, https-browserify, jsencrypt,
+  lodash, moment, process, react, react-dom, react-date-picker,
+  react-hook-form, react-idle-timer, react-redux, react-router-dom,
+  react-scripts, react-select, react-toastify, redux-persist, sass,
+  stream-browserify, stream-http, url, vm-browserify, yup
+
+--------------------------------------------------------------------------------
+External resources loaded at runtime (not bundled)
+--------------------------------------------------------------------------------
+  Google Fonts (Nunito, Open Sans), SIL Open Font License 1.1, loaded from
+  fonts.googleapis.com via src/index.scss.
