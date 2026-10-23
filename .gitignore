@@ -5,3 +5,5 @@ src_bk
 .env.prod
 .env*
 !.env.example
+
+.claude/
